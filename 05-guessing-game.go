@@ -1,46 +1,43 @@
-//http://golangcookbook.blogspot.ie/2012/11/guess-number-game-in-golang.html
+//http://golangcookbook.blogspot.ie/2012/12/guess-number-game-v2.html
 package main
 
 import (
-	"fmt"
-	"math/rand"
-	"time"
-)
+	"fmt"       // imports
+	"math/rand" // packages
+	"time"      // needed
+) // import
 
-//this generates random number between given range
-func xrand(min, max int) int {
-	rand.Seed(time.Now().Unix())
+func xrand(min, max int) int { //function to
+	rand.Seed(time.Now().Unix()) //create a random number
 	return rand.Intn(max-min) + min
-}
+} //xrand
 
 func main() {
-	var myname string
-	myrand := xrand(1, 6)
-	guessTaken := 0
-	var guess int
+	myrand := xrand(1, 10) // call function and give it the range of 1-10
 
-	fmt.Println("Hello! What is your name?")
-	fmt.Scanf("%s", &myname)
-	fmt.Printf("Well, %s, I am thinking of a number between 1 and 6.\n", myname)
+	tries := 0    // variables
+	var guess int //  used
 
-	//this is the while loop
-	for guessTaken < 6 {
-		fmt.Println("Take a guess...")
-		fmt.Scanf("%d", &guess)
-		guessTaken++
-		if guess < myrand {
-			fmt.Println("Your guess is too low.")
-		}
-		if guess > myrand {
-			fmt.Println("Your guess is too high.")
-		}
-		if guess == myrand {
+	fmt.Println("====================================")
+	fmt.Println("Welcome to My Guess The Number Game!")
+	fmt.Println("====================================")
+
+	for guess != myrand {
+		fmt.Println("Take a guess...") // prompts user
+		fmt.Scanf("%d\n", &guess)
+		tries++ //counts tries
+
+		if guess > myrand { // checks if guess is higher than random number
+			fmt.Println("Too high")
+		} else if guess < myrand { // checks if guess is lower than random number
+			fmt.Println("Too low")
+		} else { // when number is picked, informs the user and breaks the loop
+			fmt.Println("====================================")
+			fmt.Printf("The number was %d \n", myrand)
+			fmt.Printf("Good job! You guessed it in %d tries", tries)
 			break
-		}
-	}
-	if guess == myrand {
-		fmt.Printf("Good job %s! You guessed my number in %d tries\n", myname, guessTaken)
-	} else {
-		fmt.Printf("Nope. The number I had in mind was %d\n", myrand)
-	}
-}
+		} //end of if/else
+
+	} // end of for loop
+
+} // main
