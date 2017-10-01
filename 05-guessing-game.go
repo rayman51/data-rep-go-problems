@@ -36,7 +36,7 @@ func main() {
 			fmt.Printf("The number was %d \n", myrand)
 			fmt.Printf("Good job! You guessed it in %d tries", tries)
 			break
-		} //end of if/else
+		} //end ofif/else
 
 	} // end of for loop
 
