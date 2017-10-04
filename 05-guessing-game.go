@@ -25,7 +25,7 @@ func main() {
 	for guess != myrand {
 		fmt.Println("Take a guess...") // prompts user
 		fmt.Scanf("%d\n", &guess)
-		
+		tries++ //counts tries
 		if guess == prev{
 			fmt.Println("You already tried this number\n ")
 			tries-- // decrement count if number is enter again
@@ -40,7 +40,7 @@ func main() {
 			fmt.Printf("Good job! You guessed it in %d tries", tries)
 			break
 		} //end of if/else
-		tries++ //counts tries
+		
 		prev = guess // ckecks it the number was entered already
 	} // end of for loop
 
