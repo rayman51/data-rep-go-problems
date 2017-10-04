@@ -34,12 +34,12 @@ func main() {
 			fmt.Println("Too high")
 		} else if guess < myrand { // checks if guess is lower than random number
 			fmt.Println("Too low")
-		} else { // when number is picked, informs the user and breaks the loop
+		} else { // when number is picked, informs the user and breaks the if
 			fmt.Println("====================================")
 			fmt.Printf("The number was %d \n", myrand)
 			fmt.Printf("Good job! You guessed it in %d tries", tries)
 			break
-		} //end ofif/else
+		} //end of if/else
 		tries++ //counts tries
 		prev = guess // ckecks it the number was entered already
 	} // end of for loop
