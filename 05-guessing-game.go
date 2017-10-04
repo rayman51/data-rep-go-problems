@@ -28,7 +28,7 @@ func main() {
 		
 		if guess == prev{
 			fmt.Println("You already tried this number\n ")
-			tries--
+			tries-- // decrement count if number is enter again
 		}
 		if guess > myrand { // checks if guess is higher than random number
 			fmt.Println("Too high")
@@ -41,7 +41,7 @@ func main() {
 			break
 		} //end ofif/else
 		tries++ //counts tries
-		prev = guess
+		prev = guess // ckecks it the number was entered already
 	} // end of for loop
 
 } // main
