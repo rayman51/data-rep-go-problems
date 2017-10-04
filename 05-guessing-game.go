@@ -17,7 +17,7 @@ func main() {
 
 	tries := 0    // variables
 	var guess int //  used
-
+	var prev int 
 	fmt.Println("====================================")
 	fmt.Println("Welcome to My Guess The Number Game!")
 	fmt.Println("====================================")
@@ -25,8 +25,11 @@ func main() {
 	for guess != myrand {
 		fmt.Println("Take a guess...") // prompts user
 		fmt.Scanf("%d\n", &guess)
-		tries++ //counts tries
-
+		
+		if guess == prev{
+			fmt.Println("You already tried this number\n ")
+			tries--
+		}
 		if guess > myrand { // checks if guess is higher than random number
 			fmt.Println("Too high")
 		} else if guess < myrand { // checks if guess is lower than random number
@@ -37,7 +40,8 @@ func main() {
 			fmt.Printf("Good job! You guessed it in %d tries", tries)
 			break
 		} //end ofif/else
-
+		tries++ //counts tries
+		prev = guess
 	} // end of for loop
 
 } // main
