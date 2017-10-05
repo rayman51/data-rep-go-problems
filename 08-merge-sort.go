@@ -1,3 +1,4 @@
+// http://golanging.blogspot.ie/2013/04/go-slices-and-merge-sort.html
 package main
 
 import "fmt"
