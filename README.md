@@ -9,6 +9,8 @@ The [problems](https://data-representation.github.io/problems/go-fundamentals.ht
 In order for you to run these programs you will need to install the [GO](https://www.google.ie/?gws_rd=cr&dcr=0&ei=SQvUWejfHOaXgAaL3JeoBA)
 compiler on your computer.
 
+Once you have installed the compiler, and have the files on your computer, open a command line of your choice. Next, navigate your way to the folder. Then run the command "go build" followed by the name of the go file(including the file extension) you wish to run. This will then create an executeable file of the same name, but with an ".exe" ententsion. Then simpily run the .exe file and the GO program will run. 
+
 ## Problems
 The Ten programs are
 1. Hello World
