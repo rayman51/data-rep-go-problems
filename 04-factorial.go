@@ -34,6 +34,6 @@ func main() {
 	fmt.Print("Please enter a number(1-100): " )
 	fmt.Scan(&userinput)
 
-	fmt.Println("Input : ",userinput)
-	fmt.Println("Sum of Factorial Digits : ",digitSum(userinput))
+	fmt.Println("Factorial is : ",userinput)
+	fmt.Println("Sum of Factorial numbers is : ",digitSum(userinput))
 }
