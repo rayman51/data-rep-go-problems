@@ -11,7 +11,7 @@ compiler on your computer.
 
 Once you have installed the compiler, and have the files on your computer, open a command line of your choice. Next, navigate your way to the folder. Then run the command "go build" followed by the name of the go file(including the file extension) you wish to run. This will then create an executeable file of the same name, but with an ".exe" ententsion. Then simpily run the .exe file and the GO program will run. 
 
-![Screenshot] (https://github.com/rayman51/data-rep-go-problems/blob/master/images/goCap.PNG)
+![alt tag](https://github.com/rayman51/data-rep-go-problems/blob/master/images/goCap.PNG)
 
 ## Problems
 The Ten programs are
