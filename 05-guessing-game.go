@@ -20,6 +20,7 @@ func main() {
 	var prev int 
 	fmt.Println("====================================")
 	fmt.Println("Welcome to My Guess The Number Game!")
+	fmt.Println("   Guess a Number Between 1 & 10!")
 	fmt.Println("====================================")
 
 	for guess != myrand {
