@@ -5,6 +5,30 @@ import (
 	"fmt"
 	"math/big"
 )
+/*func main() {
+	var num int
+	var fact int
+	fmt.Println("Enter the number to factorialise ...") // prompts user
+	fmt.Scanf("%d\n", &num)
+
+	if num == 0 {// if num = 0 prompts user to enter again 
+	
+		fmt.Println("   Invalid Entry Please Enter again : ")
+		fmt.Scanf("%d", &num);
+		fmt.Println("====================================\n ")
+	}// if
+
+	if num>0 {// if valid number run the while loop 
+	
+		// loop to multiply numbers
+		for num > 0{
+			fact *= num//multiplies number 
+			num--// decrements number
+		}// while
+	}// if
+	fmt.Printf("    Factorial is : %d", fact)
+
+} // main*/
 
 func factoral(n uint64) (r *big.Int) {
 
