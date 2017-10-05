@@ -34,7 +34,12 @@ The Ten programs are
 
 3. https://medium.com/@kevalpatel2106/why-should-you-learn-go-f607681fad65
 
-
+## Troubleshooting
+I had trouble using the Scanf in some of these programs.
+In the guessing game program the loop would trigger twice without user input.
+After a quick google search I found out there is a small bug when using Scanf.
+For me this problem was solved by adding a \n to the input line e.g fmt.Scanf("%d\n", &guess).
+Alternatively, the problem can be solved using fmt.Scan(&guess) or Scanln(&guess). But I found it varies for device.
 
 
 
