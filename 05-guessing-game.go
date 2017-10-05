@@ -25,7 +25,8 @@ func main() {
 
 	for guess != myrand {
 		fmt.Println("Take a guess...") // prompts user
-		fmt.Scanf("%d\n", &guess)
+		fmt.Scanf("%d\n", &guess)// added \n for input because loop was running twice each turn
+								// found that fmt.Scan(&guess) works on other computers but not mine
 		tries++ //counts tries
 		if guess == prev{
 			fmt.Println("You already tried this number\n ")
