@@ -22,7 +22,11 @@ The Ten programs are
 9. Newton Square Root
 10. ReverseString
 
+## Useful Links
 
+https://golang.org
+https://en.wikipedia.org/wiki/Go_(programming_language)
+https://medium.com/@kevalpatel2106/why-should-you-learn-go-f607681fad65
 
 
 
